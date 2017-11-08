@@ -14,6 +14,6 @@ chai.use(chaiAsPromised);
 describe('users', () => {
   it('getUsers returns expected status', () => {
     return expect(chai.request(server)
-      .get('/users')).to.eventually.have.status(200);
+      .get('/users')).to.eventually.have.status(201);
   });
 });
